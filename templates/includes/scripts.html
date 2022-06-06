@@ -19,5 +19,40 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
+  $(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 15,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      // stagePadding: 50,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        768: {
+          items: 1,
+        },
+        769: {
+          items: 2,
+        },
+        991: {
+          items: 2,
+        },
+        992: {
+          items: 3,
+        },
+        1300: {
+          items: 3,
+        },
+        1400: {
+          items: 4,
+        },
+      },
+    });
+  });
+</script>
+<script>
   AOS.init();
 </script>

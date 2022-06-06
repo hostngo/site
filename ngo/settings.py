@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # apps
+    'mainpages',
 ]
 
 MIDDLEWARE = [
@@ -119,6 +122,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
 
 # Settings for whitenoise compression
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

@@ -1,0 +1,466 @@
+{% extends 'base.html' %}
+<!-- load static -->
+{% load static %}
+
+<!-- Content Block -->
+{% block PAGE_CONTENT %}
+<section class="section1">
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-bs-ride="true"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="3"
+        aria-label="Slide 4"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="4"
+        aria-label="Slide 5"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="{% static 'image/carousel1.jpeg' %}"
+          style="height: 95vh"
+          class="d-block w-100 img-fluid"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="{% static 'image/carousel2.jpeg' %}"
+          style="height: 95vh"
+          class="d-block w-100 img-fluid"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="{% static 'image/carousel3.jpeg' %}"
+          style="height: 95vh"
+          class="d-block w-100 img-fluid"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="{% static 'image/carousel4.jpeg' %}"
+          style="height: 95vh"
+          class="d-block w-100 img-fluid"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="{% static 'image/carousel5.jpeg' %}"
+          style="height: 95vh"
+          class="d-block w-100 img-fluid"
+          alt="..."
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+<section class="section2">
+  <div class="container py-5">
+    <hr class="m-auto pt-1 mb-1 bg-orange toporangeline border-0" />
+    <h1
+      class="text-center text-blue font1"
+      data-aos="fade-down"
+      data-aos-offset="150"
+    >
+      FOUNDER MESSAGE
+    </h1>
+    <div class="row my-5 px-2">
+      <div
+        class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex justify-content-center"
+        data-aos="fade-right"
+        data-aos-offset="400"
+        data-aos-easing="ease-in-sine"
+      >
+        <img
+          src="{% static 'image/president.jpeg' %}"
+          style="width: 25rem"
+          class="img-fluid"
+          alt=""
+        />
+      </div>
+      <div
+        class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex flex-column justify-content-center align-items-center"
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
+        <h3 class="mt-5 text-orange fw-bold">ALKA PRAMOD MUNGULE</h3>
+        <h5 class="mt-2 text-red">(President)</h5>
+        <p class="text-black fs-5 mt-1 font3">
+          Mrs. Alka Mungule , a sincere care and hard working lady is doing her
+          social work in the field of health care for women such as Breast
+          Cancer awareness camp; HIV Awarness camp, old age patient & their
+          health check up camp, etc. From year 2016.
+        </p>
+        <a
+          type="button"
+          href="foundernote.html"
+          class="col-lg-4 col-md-6 col-sm-6 btn btn-outline text-orange btn-shadow mt-2"
+          >READ MORE</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section3">
+  <div class="container">
+    <hr class="m-auto pt-1 mb-1 bg-orange toporangeline border-0" />
+    <h1
+      class="text-center text-blue font1"
+      data-aos="fade-down"
+      data-aos-offset="150"
+    >
+      OUR TEAM
+    </h1>
+    <div class="row my-5" data-aos="zoom-in" data-aos-offset="300">
+      <div class="owl-carousel owl-theme">
+        <div class="item d-flex justify-content-center">
+          <div
+            class="card text-center boxshadow bg-orange"
+            style="width: 17rem; height: 25rem"
+          >
+            <img
+              src="{% static 'image/president.jpeg' %}"
+              style="height: 15rem; width: 15rem"
+              class="card-img-top me-auto ms-auto my-3 px-2 rounded-circle"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4 class="card-title text-blue">ALKA PRAMOD MUNGULE</h4>
+              <p class="card-title fs-5 text-black">(President)</p>
+            </div>
+          </div>
+        </div>
+        <div class="item d-flex justify-content-center">
+          <div
+            class="card text-center bg-orange boxshadow"
+            style="width: 17rem; height: 25rem"
+          >
+            <img
+              src="{% static 'image/t1.jpeg' %}"
+              style="height: 15rem; width: 15rem"
+              class="card-img-top me-auto ms-auto my-3 px-2 rounded-circle"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4 class="card-title text-blue">YOGITA SATPUTE</h4>
+              <p class="card-body fs-5 text-black">(Secretary)</p>
+            </div>
+          </div>
+        </div>
+        <div class="item d-flex justify-content-center">
+          <div
+            class="card text-center bg-orange boxshadow"
+            style="width: 17rem; height: 25rem"
+          >
+            <img
+              src="{% static 'image/t2.jpeg' %}"
+              style="height: 15rem; width: 15rem"
+              class="card-img-top me-auto ms-auto my-3 px-2 rounded-circle"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4 class="card-title text-blue">KALPNA LOHE</h4>
+              <p class="card-body fs-5 text-black">(Member)</p>
+            </div>
+          </div>
+        </div>
+        <div class="item d-flex justify-content-center">
+          <div
+            class="card text-center bg-orange boxshadow"
+            style="width: 17rem; height: 25rem"
+          >
+            <img
+              src="{% static 'image/t3.jpeg' %}"
+              style="height: 15rem; width: 15rem"
+              class="card-img-top me-auto ms-auto my-3 px-2 rounded-circle"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4 class="card-title text-blue">PALLVI LAKHE</h4>
+              <p class="card-body fs-5 text-black">(Member)</p>
+            </div>
+          </div>
+        </div>
+        <div class="item d-flex justify-content-center">
+          <div
+            class="card text-center bg-orange boxshadow"
+            style="width: 17rem; height: 25rem"
+          >
+            <img
+              src="{% static 'image/t4.jpeg ' %}"
+              style="height: 15rem; width: 15rem"
+              class="card-img-top me-auto ms-auto my-3 px-2 rounded-circle"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4 class="card-title text-blue">SONALI REVATKAR</h4>
+              <p class="card-body fs-5 text-black">(Member)</p>
+            </div>
+          </div>
+        </div>
+        <div class="item d-flex justify-content-center">
+          <div
+            class="card text-center bg-orange boxshadow"
+            style="width: 17rem; height: 25rem"
+          >
+            <img
+              src="{% static 'image/t5.jpeg' %}"
+              style="height: 15rem; width: 15rem"
+              class="card-img-top me-auto ms-auto my-3 px-2 rounded-circle"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4 class="card-title text-blue">RUPALI MESHRAM</h4>
+              <p class="card-body fs-5 text-black">(Member)</p>
+            </div>
+          </div>
+        </div>
+        <div class="item d-flex justify-content-center">
+          <div
+            class="card text-center bg-orange boxshadow"
+            style="width: 17rem; height: 25rem"
+          >
+            <img
+              src="{% static 'image/t6.jpeg' %}"
+              style="height: 15rem; width: 15rem"
+              class="card-img-top me-auto ms-auto my-3 px-2 rounded-circle"
+              alt="..."
+            />
+            <div class="card-body">
+              <h4 class="card-title text-blue">BHARTI KHADASE</h4>
+              <p class="card-body fs-5 text-black">(Member)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section4 d-flex align-items-center">
+  <div class="container">
+    <!-- <hr class=" m-auto pt-1 mb-1 bg-orange toporangeline border-0 "> -->
+    <h1 class="text-center text-white font2">
+      SUPPORT US WITH YOUR LITTLE HELP
+    </h1>
+    <div class="my-5">
+      <a
+        type="button"
+        href="https://razorpay.me/@prernadayiranilaxmibaimahilab"
+        class="btn btn-lg btn-donate border-0 d-flex justify-content-center align-items-center fs-1 text-white me-auto ms-auto col-6 font1"
+        >DONATE</a
+      >
+    </div>
+  </div>
+</section>
+<section class="section5 bg-blue container-fluid">
+  <div class="container py-3">
+    <hr class="m-auto pt-1 mb-1 bg-orange mt-4 toporangeline border-0" />
+    <h1
+      class="text-center text-white font1"
+      data-aos="fade-down"
+      data-aos-offset="150"
+    >
+      WHAT WE DO
+    </h1>
+    <div class="row py-5">
+      <div
+        class="col-lg-2 col-md-4 col-sm-12 col-12 text-center"
+        data-aos="zoom-out-up"
+        data-aos-offset="400"
+      >
+        <img src="{% static 'image/food.png' %}" alt="" />
+        <div class="text-white fs-5 my-3 font3">FOOD DISTRIBUTION</div>
+      </div>
+      <div
+        class="col-lg-2 col-md-4 col-sm-12 col-12 text-center"
+        data-aos="zoom-out-up"
+        data-aos-offset="400"
+      >
+        <img src="{% static 'image/health.png' %}" alt="" />
+        <div class="text-white fs-5 my-3 font3">FREE HEALTH CHECKUP</div>
+      </div>
+      <div
+        class="col-lg-2 col-md-4 col-sm-12 col-12 text-center"
+        data-aos="zoom-out-up"
+        data-aos-offset="400"
+      >
+        <img src="{% static 'image/education.png' %}" alt="" />
+        <div class="text-white fs-5 my-3 font3">EDUCATION CAMPS</div>
+      </div>
+      <div
+        class="col-lg-2 col-md-4 col-sm-12 col-12 text-center"
+        data-aos="zoom-out-up"
+        data-aos-offset="400"
+      >
+        <img src="{% static 'image/self-defence.png' %}" alt="" />
+        <div class="text-white fs-5 my-3 font3">SELF-DEFENCE CAMPS</div>
+      </div>
+      <div
+        class="col-lg-2 col-md-4 col-sm-12 col-12 text-center"
+        data-aos="zoom-out-up"
+        data-aos-offset="400"
+      >
+        <img src="{% static 'image/cloth.png' %}" alt="" />
+        <div class="text-white fs-5 my-3 font3">CLOTHES DISTRIBUTION</div>
+      </div>
+      <div
+        class="col-lg-2 col-md-4 col-sm-12 col-12 text-center"
+        data-aos="zoom-out-up"
+        data-aos-offset="400"
+      >
+        <img src="{% static 'image/skill-development.png' %}" alt="" />
+        <div class="text-white fs-5 my-3 font3">SKILL DEVELOPMENT</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section6" id="enquiry">
+  <div class="container my-5">
+    <hr class="m-auto pt-1 mb-1 bg-orange toporangeline border-0" />
+    <h1
+      class="text-center text-blue font1"
+      data-aos="fade-down"
+      data-aos-offset="150"
+    >
+      ENQUIRY
+    </h1>
+    <div class="row my-5">
+      <div
+        class="col-lg-6 col-md-12 col-sm-12 col-12 text-center"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        data-aos-offset="300"
+      >
+        <img
+          src="{% static 'image/enquiry.jpg' %}"
+          alt=""
+          class="img-fluid"
+          style="height: 80vh; width: 100vw"
+        />
+      </div>
+      <div
+        class="col-lg-6 col-md-12 col-sm-12 col-12"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        data-aos-offset="300"
+      >
+        <!-- prevent -->
+        <form id="myForm">
+          <div class="mb-3">
+            <label for="inputName" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control shadow-none"
+              id="inputName"
+              aria-required="true"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control shadow-none"
+              id="inputEmail"
+              aria-required="true"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="inputPhone" class="form-label">Phone Number</label>
+            <input
+              type="text"
+              class="form-control shadow-none"
+              id="inputPhone"
+              minlength="10"
+              aria-required="true"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="inputMessage" class="form-label"
+              >Tell us what you need help with</label
+            >
+            <textarea
+              class="form-control shadow-none"
+              id="inputMessage"
+              minlength="30"
+              rows="3"
+              aria-required="true"
+              required
+            ></textarea>
+          </div>
+          <div class="d-grid gap-2 col-6 ms-auto me-auto pt-4 pb-5">
+            <button
+              type="button"
+              onclick="sendEmail();"
+              class="btn btn-outline text-orange btn-shadow text-center mt-2"
+            >
+              SEND
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- owl carousel -->
+{% include 'utils/home_owl_caro.html' %}
+<!-- owl carousel -->
+
+{% endblock PAGE_CONTENT %}

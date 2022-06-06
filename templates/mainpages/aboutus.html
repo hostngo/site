@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+<!-- load static -->
+{% load static %}
+
+<!-- Content Block -->
+
+{% block PAGE_CONTENT %}
+<section class="s1">
+  <div class="container py-5">
+    <hr class="m-auto pt-1 mb-1 bg-orange toporangeline border-0" />
+    <h1 class="text-center text-blue font1">ABOUT US</h1>
+    <div class="row my-5 px-2">
+      <div
+        class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex justify-content-center"
+        data-aos="zoom-in-up"
+        data-aos-offset="250"
+      >
+        <img
+          src="{% static 'image/aboutus.png' %}"
+          style="width: 25rem"
+          class="img-fluid"
+          alt=""
+        />
+      </div>
+      <div
+        class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex flex-column justify-content-center align-items-center"
+        data-aos="zoom-in-down"
+        data-aos-offset="200"
+      >
+        <p class="text-black fs-5 mt-1 font3">
+          The main purpose of foundation of this organization is not only in the
+          medical health care related but also in the sectore where backwards
+          area&apos;s Girls & boy&apos;s can have their education of right,
+          Technical education , employment, self employment and many other extra
+          curriculum activities.
+        </p>
+        <p class="text-black fs-5 mt-1 font3">
+          The organization IS also induilged in free health check up camps in
+          rular areas, how to be safe from fraud Doctors, self defence activity
+          camps, Day to day challenges overcome activity compoignt, etc . more
+          over specially for woman&apos;s of rular areas in the management of
+          obs & gyn sector, pregnancy related managements camps awareness,
+          healthy Enviorments usage & care related educations, etc. All free of
+          cost to the peoples.
+        </p>
+        <p class="text-black fs-5 mt-1 font3">
+          The organization seils to stand every time free the social activities
+          such as awareness of saving water, electricity, etc. Career
+          Development, livns throughs, Development of self- People- Society-
+          Country.
+        </p>
+        <p class="text-black fs-3 mt-1 fw-bold font3">“JAI HIND”</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock PAGE_CONTENT %}

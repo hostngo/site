@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+<!-- load static -->
+{% load static %}
+
+<!-- Content Block -->
+
+{% block PAGE_CONTENT %}
+<section class="se1">
+  <div class="container py-5">
+    <hr class="m-auto pt-1 mb-1 bg-orange toporangeline border-0" />
+    <h1 class="text-center text-blue font1">FOUNDER MESSAGE</h1>
+    <div class="row my-5 px-2">
+      <div
+        class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex justify-content-center"
+      >
+        <img
+          src="{% static 'image/president.jpeg' %}"
+          style="width: 25rem"
+          class="img-fluid"
+          alt=""
+        />
+      </div>
+      <div
+        class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h3 class="mt-5 text-orange fw-bold">ALKA PRAMOD MUNGULE</h3>
+        <h5 class="mt-2 text-red">(President)</h5>
+        <p class="text-black fs-5 mt-1 font3">
+          Mrs. Alka Mungule , a sincere care and hard working lady is doing her
+          social work in the field of health care for women such as Breast
+          Cancer awareness camp; HIV Awarness camp, old age patient & their
+          health check up camp, etc. From year 2016.
+        </p>
+        <p class="text-black fs-5 mt-1 font3">
+          Looking to the (concerned) of rular areas patients need and importance
+          Mrs. Alka Madam and her supporters decided to create an organization
+          and on 12/03/2018; M/S Prernadai Rani Laxmibai Mahila Bahuudeshiya
+          Sanstha came got established. Since, 01/04/2018 under the name of
+          organization M/S Prernadai Rani Laxmibai Mahila Bahuudeshiya Sanstha ;
+          “ Jeevan chhaya patient & old age centre came to an existence where
+          many critical patents like Bedridden , Paralysis, Neuro accidental
+          patients care been done.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock PAGE_CONTENT %}

@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+<!-- load static -->
+{% load static %}
+
+<!-- Content Block -->
+
+{% block PAGE_CONTENT %}
+<section>
+  <div class="container py-5">
+    <hr class="m-auto pt-1 mb-1 bg-orange toporangeline border-0" />
+    <h1 class="text-center text-blue font1">WORK</h1>
+    <a
+      href="add-to-gallery.html"
+      class="float-end btn bg-orange text-white btn-shadow addbtn px-4"
+    >
+      <i class="bi bi-plus-lg"></i> ADD
+    </a>
+    <div class="row container">
+      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+        <img
+          class="aspect-5-3 img-fluid img-cover mt-5 mx-2 rounded-3 p-1 boxshadow"
+          src="{% static 'image/carousel1.jpeg' %}"
+          alt=""
+        />
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+        <img
+          class="aspect-5-3 img-fluid img-cover mt-5 mx-2 rounded-3 p-1 boxshadow"
+          src="{% static 'image/work1.jpeg' %}"
+          alt=""
+        />
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+        <img
+          class="aspect-5-3 img-fluid img-cover mt-5 mx-2 rounded-3 p-1 boxshadow"
+          src="{% static 'image/work2.jpeg' %}"
+          alt=""
+        />
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+        <img
+          class="aspect-5-3 img-fluid img-cover mt-5 mx-2 rounded-3 p-1 boxshadow"
+          src="{% static 'image/work3.jpeg' %}"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="row container">
+      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+        <img
+          class="aspect-5-3 img-fluid img-cover rounded-3 mt-5 mx-2 p-1 boxshadow"
+          src="{% static 'image/work4.jpeg' %}"
+          alt=""
+        />
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+        <img
+          class="aspect-5-3 img-fluid img-cover rounded-3 mt-5 mx-2 p-1 boxshadow"
+          src="{% static 'image/work5.jpeg' %}"
+          alt=""
+        />
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+        <img
+          class="aspect-5-3 img-fluid img-cover rounded-3 mt-5 mx-2 p-1 boxshadow"
+          src="{% static 'image/carousel2.jpeg' %}"
+          alt=""
+        />
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+        <img
+          class="aspect-5-3 img-fluid img-cover rounded-3 mt-5 mx-2 p-1 boxshadow"
+          src="{% static 'image/carousel3.jpeg' %}"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock PAGE_CONTENT %}

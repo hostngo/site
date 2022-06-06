@@ -1,0 +1,101 @@
+{% load static %}
+
+<!-- footer -->
+<footer class="bg-dark text-secondary py-5">
+  <div class="container">
+    <div class="row row-cols-4">
+      <div class="d-flex col-sm-12 col-lg-3 col-12 mb-5">
+        <img
+          src="{% static 'image/logo.png' %}"
+          alt="logo"
+          class="footer-logo"
+          height="150rem"
+          width="400rem"
+        />
+        <!-- <img src="image/logo1.png" alt="logo" width="80rem" height="80rem" class="d-inline-block align-text-top"> -->
+        <!-- <h5 class="text-beige fs-6  "> Preranadai Ranilaxmibai Mahila <br> Bahuudeshiya Sanstha</h5> -->
+      </div>
+      <div class="d-flex flex-column col-sm-12 col-lg-3 col-12">
+        <h5 class="text-white mb-4 pt-4">QUICK MENU</h5>
+        <ul class="list-unstyled pt-2">
+          <li>
+            <a
+              class="text-decoration-none footercolor"
+              href="{% url 'aboutus' %}"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-decoration-none footercolor"
+              href="{% url 'foundernote' %}"
+              >Founder Message</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-decoration-none footercolor"
+              href="{% url 'contactus' %}"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a class="text-decoration-none footercolor" href="#enquiry"
+              >Enquiry</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex flex-column col-sm-12 col-lg-3 col-12">
+        <h5 class="text-white mb-4 pt-4">MAIN MENU</h5>
+        <ul class="list-unstyled pt-2">
+          <li>
+            <a class="text-decoration-none footercolor" href="login.html"
+              >Admin Login</a
+            >
+          </li>
+          <li>
+            <a class="text-decoration-none footercolor" href="{% url 'work' %}"
+              >Work</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-decoration-none footercolor"
+              href="{% url 'certificate' %}"
+              >Certificate</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-decoration-none footercolor"
+              href="https://razorpay.me/@prernadayiranilaxmibaimahilab"
+              >Donation</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex flex-column col-sm-12 col-lg-3 col-12">
+        <h5 class="text-white mb-4 pt-4">SOCIAL MEDIA</h5>
+        <div class="flew-row pt-2">
+          <a
+            href="https://www.facebook.com/Jeevan-Chhaya-Nursing-Care-Center-342579426254027/"
+            ><img
+              src="{% static 'image/fb.jpg' %}"
+              class="mx-1"
+              style="width: 2rem"
+              alt=""
+          /></a>
+          <a
+            href="https://api.whatsapp.com/send?phone=919527252047&text=Got%20your%20reference%20from%20your%20*website%20*.%20I%20want%20to%20know%20more%20about%20your%20services"
+            ><img
+              src="{% static 'image/whatsapp.png' %}"
+              class="mx-1"
+              style="width: 2rem"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

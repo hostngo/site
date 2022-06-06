@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Isha Gupta" />
+    <link
+      rel="shortcut icon"
+      href="{% static 'favicon.ico' %}"
+      type="image/x-icon"
+    />
+
+    {% include 'includes/stylesheets.html' %}
+
+    <title>PRLMBS</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    {% include 'includes/navbar.html' %}
+    <!-- navbar -->
+
+    <!-- Main Content -->
+    {% block PAGE_CONTENT %} {% endblock PAGE_CONTENT %}
+    <!-- Main Content -->
+
+    <!-- Footer -->
+    {% include 'includes/footer.html' %}
+    <!-- Footer -->
+
+    <!-- Scripts -->
+    {% include 'includes/scripts.html' %}
+    <!-- Scripts -->
+  </body>
+</html>

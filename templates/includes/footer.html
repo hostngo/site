@@ -39,11 +39,11 @@
               >Contact Us</a
             >
           </li>
-          <li>
+          {% comment %} <li>
             <a class="text-decoration-none footercolor" href="#enquiry"
               >Enquiry</a
             >
-          </li>
+          </li> {% endcomment %}
         </ul>
       </div>
       <div class="d-flex flex-column col-sm-12 col-lg-3 col-12">
@@ -80,6 +80,7 @@
         <div class="flew-row pt-2">
           <a
             href="https://www.facebook.com/Jeevan-Chhaya-Nursing-Care-Center-342579426254027/"
+            target="_blank"
             ><img
               src="{% static 'image/fb.jpg' %}"
               class="mx-1"
@@ -90,6 +91,15 @@
             href="https://api.whatsapp.com/send?phone=919527252047&text=Got%20your%20reference%20from%20your%20*website%20*.%20I%20want%20to%20know%20more%20about%20your%20services"
             ><img
               src="{% static 'image/whatsapp.png' %}"
+              class="mx-1"
+              style="width: 2rem"
+              alt=""
+          /></a>
+          <a
+            href="https://youtube.com/channel/UCPHamn4W2Z-o-KVa35Oym-A"
+            target="_blank"
+            ><img
+              src="{% static 'image/yt.png' %}"
               class="mx-1"
               style="width: 2rem"
               alt=""

@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+from .models import CertificateModel, WorkModel
+
 
 def home(request):
     return render(request, 'mainpages/home.html')
@@ -10,7 +12,10 @@ def aboutus(request):
 
 
 def certificate(request):
-    return render(request, 'mainpages/certificate.html')
+    certificates = CertificateModel.objects.all()
+
+    return render(request, 'mainpages/certificate.html',
+                  {'certificates': certificates})
 
 
 def contactus(request):
@@ -22,4 +27,14 @@ def foundernote(request):
 
 
 def work(request):
-    return render(request, 'mainpages/work.html')
+    works = WorkModel.objects.all()
+
+    return render(request, 'mainpages/work.html', {'works': works})
+
+
+def login(request):
+    return render(request, 'mainpages/login.html')
+
+
+def admin_panel(request):
+    return render(request, 'mainpages/admin.html')

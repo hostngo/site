@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+<!-- cloudinary -->
+{% load cloudinary %}
 <!-- load static -->
 {% load static %}
 
@@ -10,71 +12,19 @@
     <hr class="m-auto pt-1 mb-1 bg-orange toporangeline border-0" />
     <h1 class="text-center text-blue font1">CERTIFICATE</h1>
     <a
-      href="add-to-gallery.html"
+      href="/admin/mainpages/certificatemodel/add/"
+      target="_blank"
       class="float-end btn bg-orange text-white btn-shadow addbtn px-4"
     >
       <i class="bi bi-plus-lg"></i> ADD
     </a>
+    
     <div class="row container">
+      {% for cert in certificates %}
       <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-        <img
-          class="aspect-3-4 img-fluid img-cover mt-5 mx-2 rounded-3 p-2 boxshadow"
-          src="{% static 'image/cert1.jpg' %}"
-          alt=""
-        />
+        {% cloudinary cert.certificate_image class="aspect-3-4 img-fluid img-cover mt-5 mx-2 rounded-3 p-2 boxshadow" %}
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-        <img
-          class="aspect-3-4 img-fluid img-cover mt-5 mx-2 rounded-3 p-2 boxshadow"
-          src="{% static 'image/cert2.jpg' %}"
-          alt=""
-        />
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-        <img
-          class="aspect-3-4 img-fluid img-cover mt-5 mx-2 rounded-3 p-2 boxshadow"
-          src="{% static 'image/cert3.jpg' %}"
-          alt=""
-        />
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-        <img
-          class="aspect-3-4 img-fluid img-cover mt-5 mx-2 rounded-3 p-2 boxshadow"
-          src="{% static 'image/cert4.jpg' %}"
-          alt=""
-        />
-      </div>
-    </div>
-    <div class="row container">
-      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-        <img
-          class="aspect-3-4 img-fluid img-cover rounded-3 mt-5 mx-2 p-2 boxshadow"
-          src="{% static 'image/cert5.jpg' %}"
-          alt=""
-        />
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-        <img
-          class="aspect-3-4 img-fluid img-cover rounded-3 mt-5 mx-2 p-2 boxshadow"
-          src="{% static 'image/cert6.jpg' %}"
-          alt=""
-        />
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-        <img
-          class="aspect-3-4 img-fluid img-cover rounded-3 mt-5 mx-2 p-2 boxshadow"
-          src="{% static 'image/cert7.jpg' %}"
-          alt=""
-        />
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-        <img
-          class="aspect-3-4 img-fluid img-cover rounded-3 mt-5 mx-2 p-2 boxshadow"
-          src="{% static 'image/cert8.jpg' %}"
-          alt=""
-        />
-      </div>
-    </div>
+      {% endfor %} 
   </div>
 </section>
 {% endblock PAGE_CONTENT %}

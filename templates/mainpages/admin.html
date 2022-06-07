@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+<!-- load static -->
+{% load static %}
+
+<!-- Content Block -->
+
+{% block PAGE_CONTENT %}
+<section class="container my-5">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Add Work Images</h5>
+          <p class="card-text">Add Images for Work section of Gallery</p>
+
+          <a type="button" class="btn bg-orange">Add</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Add Certificates</h5>
+          <p class="card-text">Add Images for Certificate section of Gallery</p>
+
+          <a type="button" class="btn bg-orange">Add</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock PAGE_CONTENT %}

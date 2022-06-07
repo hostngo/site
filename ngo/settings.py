@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary',
 
     # apps
     'mainpages',
@@ -145,7 +146,10 @@ JAZZMIN_SETTINGS = {
     'site_header': 'PRLMBS Admin',
 
     # square logo to use for your site, must be present in static files, used for favicon and brand on top left
-    'site_logo': 'favicon.ico',
+    'site_logo': 'favicon_128.png',
+
+    # CSS classes that are applied to the logo above
+    "site_logo_classes": "img-circle img-fluid",
 
     # Welcome text on the login screen
     'welcome_sign': 'Need some Powers?',
@@ -270,3 +274,40 @@ JAZZMIN_UI_TWEAKS={
     'actions_sticky_top': True
 }
 # yapf: enable
+
+# cloudinary setup
+CLOUDINARY_URL = env.str('CLOUDINARY_URL')
+
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'formatters': {
+#         'verbose': {
+#             'format':
+#             "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s",
+#             'datefmt': "%d/%b/%Y %H:%M:%S"
+#         },
+#         'simple': {
+#             'format': '%(levelname)s %(message)s'
+#         },
+#     },
+#     'handlers': {
+#         'file': {
+#             'level': 'DEBUG',
+#             'class': 'logging.FileHandler',
+#             'filename': 'mysite.log',
+#             'formatter': 'verbose'
+#         },
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['file'],
+#             'propagate': True,
+#             'level': 'DEBUG',
+#         },
+#         'MYAPP': {
+#             'handlers': ['file'],
+#             'level': 'DEBUG',
+#         },
+#     }
+# }
